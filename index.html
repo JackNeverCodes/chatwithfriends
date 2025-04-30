@@ -13,7 +13,8 @@
         <input type="text" placeholder="Type a message" id="message">
         <button id="send">Send</button>
 
-        <script>
+        <script type="module">
+            import * as trystero from "./trystero-nostr.min.js";
 
             function getUsername() {
                 return document.getElementyById("username").value || "Anonymous";
